@@ -2,7 +2,7 @@
 REST-API with Geoname
 # Task for Infotecs(Analyst (python))
 ## Getting Started
-File: RU.txt
+File: RU.txt from http://download.geonames.org/export/dump/RU.zip
 Programming language: Python 3
 Installed libraries pandas 1.1.1 and flask 1.1.2
 Run script.py and after that server running on *http://127.0.0.1:8000/*
