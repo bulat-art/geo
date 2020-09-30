@@ -8,7 +8,7 @@ header_list = ['geonameid', "name", "asciiname",
                "elevation", "dem", "timezone",
                "modification_date"]  # Create list with names of columns(Создаю лист с именами колонок)
 
-all_city = pd.read_csv("http://download.geonames.org/export/dump/RU.zip",compression='zip', sep="\t", names=header_list,
+all_city = pd.read_csv("RU.txt", sep="\t", names=header_list,
                        low_memory=False)  # save RU.txt as DataFrame(Создаю датафрейм с данными из RU.txt)
 all_city = all_city.query("feature_class=='P'")  # choose only cities(Оставляю города)
 all_city["alternatenames"] = all_city["alternatenames"].fillna(" ")
